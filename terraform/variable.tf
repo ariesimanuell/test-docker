@@ -1,9 +1,9 @@
 variable "aws_access_key" {
-  default = "AKIARYVWZUH5SVPSIO5Q"
+  default = "AKIARYVWZUH5SVPASF5F"
 }
 
 variable "aws_secret_key" {
-  default = "kPK0mZ5SMiX4bmWVUh6C1jeZM8Qyw0HcF8qn0sXc"
+  default = "kPK0mZ5SMiX4bmWVUh6C1jeZM8Qyw0HcF8qnaeSf"
 }
 
 variable "aws_region" {
@@ -29,9 +29,4 @@ variable "Subnet-Publics" {
 
 variable "key_name" {
   default = "testaries2"
-}
-
-variable "generate_ssh_key" {
-  type    = bool
-  default = true
 }
