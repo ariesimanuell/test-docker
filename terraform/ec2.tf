@@ -57,6 +57,8 @@ resource "aws_instance" "test1app" {
     inline = [
       "chmod +x /home/ubuntu/install-docker.sh",
       "/bin/sh -c /home/ubuntu/install-docker.sh",
+      "cd docker-needs"
+      "docker-compose -f docker-compose-nginx.yml up"
     ]
   }
 }
@@ -109,6 +111,8 @@ resource "aws_instance" "test2app" {
     inline = [
       "chmod +x /home/ubuntu/install-docker.sh",
       "/bin/sh -c /home/ubuntu/install-docker.sh",
+      "cd docker-needs"
+      "docker-compose -f docker-compose-elastic.yml up"
     ]
   }
 
