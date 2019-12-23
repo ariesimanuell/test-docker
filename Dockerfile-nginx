@@ -1,0 +1,4 @@
+FROM nginx:latest
+MAINTAINER ARIES
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
+EXPOSE 80 8080
